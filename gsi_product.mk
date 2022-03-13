@@ -34,5 +34,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.notification_sound?=pixiedust.ogg \
     ro.com.android.dataroaming?=true \
 
-PRODUCT_COPY_FILES += \
-    device/sample/etc/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
+# Comment out to avoid conflict with Lineage BUILD_PREBUILT apns conf.
+# PRODUCT_COPY_FILES += \
+#     device/sample/etc/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
