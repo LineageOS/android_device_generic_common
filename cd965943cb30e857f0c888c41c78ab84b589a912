@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "237ccd0d_e9b8e74f",
+        "filename": "gsi_product.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-03-13T10:44:35Z",
+      "side": 1,
+      "message": "Guard it like build/make:\n\nifeq ($(LINEAGE_BUILD),)",
+      "revId": "cd965943cb30e857f0c888c41c78ab84b589a912",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
