@@ -54,7 +54,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_release.mk)
 #
 # Flag build to add in Usb Debugging Test App
 #
-ifneq ($(filter userdebug,$(TARGET_BUILD_VARIANT)),)
+ifneq ($(filter userdebug eng,$(TARGET_BUILD_VARIANT)),)
     $(call soong_config_set_bool, gsi, import_usb_debugging_test_app, true)
 endif
 
@@ -64,7 +64,6 @@ PRODUCT_BRAND := Android
 PRODUCT_MODEL := GSI on ARM64
 
 PRODUCT_SOONG_DEFINED_SYSTEM_IMAGE := android_gsi
-PRODUCT_USE_SOONG_NOTICE_XML := true
 USE_SOONG_DEFINED_SYSTEM_IMAGE := true
 
 PRODUCT_PACKAGES_DEBUG += UsbDisableDebugger

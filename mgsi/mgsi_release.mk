@@ -43,5 +43,3 @@ PRODUCT_PACKAGES += \
     gsi_skip_mount.cfg \
     init.gsi.rc \
 
-# Support additional P and Q VNDK packages
-PRODUCT_EXTRA_VNDK_VERSIONS := 30
